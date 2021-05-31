@@ -1,6 +1,6 @@
 """
 Useage: 
->>> Roll("2d4")
+>>> Roll("2d4") # general useage
 Roll(2d4): 8
 
 >>> Roll("2d6+5") # more general useage
