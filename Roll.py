@@ -1,6 +1,9 @@
 """
 Useage: 
->>> Roll("2d6+5") # general useage
+>>> Roll("2d4")
+Roll(2d4): 8
+
+>>> Roll("2d6+5") # more general useage
 Roll(2d6+5): 11
 
 >>> foo = Roll("2d6+5") # Roll object can be stored as a variable
@@ -9,6 +12,9 @@ Roll(2d6+5): 11
 
 >>> Roll("2d6*(5d4)") # functions like a normal calculator (dice rolls are calculated first)
 Roll(2d6*(5d4)): 112
+
+>>> Roll("[2+3*4]^4") # also doesn't need dice if you don't want it
+Roll([2+3*4]^4): 38416
 
 >>> Roll.d20(6) # roll a d20 with a +6 modifier (allows negative numbers)
 15
